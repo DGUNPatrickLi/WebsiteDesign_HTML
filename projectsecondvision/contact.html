@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing - Comment</title>
+    <link rel="stylesheet" type="text/css" href="src/css/contact_style.css">
+
+</head>
+<body style="background-image: url('src/img/form-background.png');background-size: cover; text-align:-webkit-center;">
+    
+    <div class=""style="
+    margin-top:80px;
+    padding:40px;
+    width:fit-content;
+    text-align: -webkit-center;
+    background:rgb(255,255,255,0.9) ;
+    ">
+    <FORM name="form_name"
+        action="mailto:sc.chan@cpce-polyu.edu.hk"
+        enctype="text/plain"
+        method="POST">
+        
+        <TABLE BORDER="1"  ALIGN="CENTER">
+        <CAPTION><H1>Comment to Cloud Computing</H1></CAPTION>
+
+        <TR HEIGTH="40">
+            <TH COLSPAN="2">Your Personal Information</TH>
+        </TR>
+        <TR>
+             <INPUT TYPE="hidden"  NAME="Submit-time" id="submit-time" > 
+
+            <TD WIDTH="300"  class="form-question"> Gender: </TD>
+            <TD WIDTH="300">
+                <INPUT TYPE="radio" NAME="Gender" VALUE="M" CHECKED>M
+                <INPUT TYPE="radio" NAME="Gender" VALUE="F">F
+            </TD>
+        </TR>
+        <TR>
+            <TD class="form-question"> Age Group: </TD>
+            <TD>
+                <SELECT Name="Age-group">
+                            <OPTION VALUE="under15"> below 15
+                            <OPTION VALUE="16to30"> 16-30
+                            <OPTION VALUE="31to45"> 31-45
+                            <OPTION VALUE="46to60"> 46-60
+                            <OPTION VALUE="over60"> above 60
+                </SELECT>
+            
+            </TD>
+        </TR>
+        <TR>
+            <th COLSPAN="2" ALIGN="CENTER"><B>Your Option Of Our Webpage<B></th>
+        </TR>
+        <TD class="form-question"> What is your favourite parts in our website?</TD>
+
+        <TD>
+            <INPUT TYPE="checkbox" name="CloudComputing" id="Cloud_Computing"           VALUE="Cloud_Computing">            <label for="Cloud_Computing"> Cloud Computing</label>
+            <INPUT TYPE="checkbox" name="CloudComputing" id="Types_of_Cloud_Computing" VALUE="Types_of_Cloud_Computing">    <label for="Types_of_Cloud_Computing">Types of Cloud Computing</label>
+            <br>
+            <INPUT TYPE="checkbox" name="CloudComputing" id="Benfits_of_Cloud_Computing" VALUE="Benfits_of_Cloud_Computing"> <label for="Benfits_of_Cloud_Computing">Benfits of Cloud Computing</label>
+			<br>
+            <INPUT TYPE="checkbox" name="CloudComputing" id="Practical_use_of_Cloud_Computing" VALUE="Practical_use_of_Cloud_Computing"> <label for="Practical_use_of_Cloud_Computing">Practical use of Cloud Computing</label
+			><br>
+            <INPUT TYPE="checkbox" name="CloudComputing" id="Pros_and_cons_of_Cloud_Computing" VALUE="Pros_and_cons_Cloud_Computing"> <label for="Pros_and_cons_of_Cloud_Computing">Pros & cons of Cloud Computing</label>
+        </TD>
+        </TR>
+        <TR>
+            <TD class="form-question"> Would you recommend to your friend or your family?</TD>
+            <TD>
+                <INPUT TYPE="radio" NAME="Recommend" id="recommend_yes" VALUE="YES" CHECKED><label for="recommend_yes">YES</label> <br>
+                <INPUT TYPE="radio" NAME="Recommend" id="recommend_no" VALUE="NO"><label for="recommend_no">No</label>
+            </TD>
+        </TR>
+
+        <TR>
+             <th COLSPAN="2" ALIGN="CENTER"><B>Your comments of our webpage<B></th>
+        </TR>
+
+        <TR>
+            <TD COLSPAN="2" ALIGN="CENTER" class="form-question">
+                <textarea NAME="Comment" rows="5" cols="50" placeholder="Please leave your opinon here..."></textarea>
+            </TD>
+        </TR>
+        <TR>
+        <TD COLSPAN="2" ALIGN="RIGHT">
+
+        <!--  Submit Time -->
+          
+
+        <INPUT TYPE="RESET" VALUE="Clear my answer and choice">
+        <INPUT TYPE="SUBMIT" VALUE="Submit my answer and choice">
+        </TD>
+        </TR>
+        
+    </FORM>
+    </Table>
+    </div>
+</body>
+<script>
+    var d = Date(); 
+    a = d.toString(); 
+    time= a.slice(4, a.search("G"));
+    document.getElementById('submit-time').value= time ; 
+    console.log(time);
+
+
+</script>
+</html>
